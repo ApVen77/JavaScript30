@@ -7,6 +7,11 @@
 </head>
 <body>
 
+  <p style="font-size:48px" class="emoji1">
+    &#128512;
+    </p>
+
+    &#128516; &#128525; &#128151
   <form class="search-form">
     <input type="text" class="search" placeholder="City or State">
     <ul class="suggestions">
@@ -44,6 +49,7 @@ function displayMatches() {
       <li>
         <span class="name">${cityName}, ${stateName}</span>
         <span class="population">${numberWithCommas(place.population)}</span>
+        <span class="rank">${(place.rank)}</span>
       </li>
     `;
   }).join('');

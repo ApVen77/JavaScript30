@@ -15,6 +15,25 @@ input {
   padding: 20px;
 }
 
+.emoji1 {
+      /* properties you want to transition  */
+      transition-property: all;
+      -moz-transition-property: all;
+      /* /* How long you want the element to transition from start to finish */
+      transition-duration: 2s;
+  
+      /* how long until the transition begins */
+      transition-delay: 2s;
+      /* how we want our elements to tranistion ease, ease-in ease-out ease-in-out */
+      transition-timing-function: ease-out;
+  
+ 
+}
+
+.emoji1:hover {
+  transform: rotate(20deg);
+}
+
 .search-form {
   max-width: 400px;
   margin: 50px auto;
@@ -67,6 +86,11 @@ input.search {
 
 span.population {
   font-size: 15px;
+  text-align: center;
+}
+
+span.rank {
+  font-size: 10px;
 }
 
 .hl {
